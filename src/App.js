@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
@@ -15,14 +14,17 @@ import TeacherEdit from './pages/TeacherEdit';
 import TeachersDelete from './services/TeachersDelete'; 
 
 const Home = () => (
-  <div className="flex flex-col items-center justify-center min-h-screen bg-img-app">
-    <nav className="space-x-4 mb-6 flex flex-wrap justify-center">
-      <Link to="/show-student" className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 m-2">Students</Link>
-      <Link to="/show-teacher" className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 m-2">Teachers</Link>
-      <Link to="/show-subjects" className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 m-2">Subjects</Link>
-      {/* <Link to="/assign-subject" className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 m-2">Assign Subjects</Link> */}
-
-    </nav>
+  <div className="main-content">
+    <div className="navbar">
+      
+      <nav className="space-x-4">
+        <Link to="/show-student" className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600">Students</Link>
+        <Link to="/show-teacher" className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600">Teachers</Link>
+        <Link to="/show-subjects" className="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600">Subjects</Link>
+      </nav>
+    </div>
+    <div className="flex flex-col items-center justify-center mt-24">
+    </div>
   </div>
 );
 
